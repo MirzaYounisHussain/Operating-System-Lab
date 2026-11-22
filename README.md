@@ -14,23 +14,25 @@ It includes an **Operating System Architecture Manifest**, detailed experiment w
 
 ## 📑 Lab Manifest (Index of Experiments)
 
-| Exp # | Sub-Part | Date | Title / Topic | Primary Commands / System Calls | Key Artifacts |
-| :---: | :---: | :---: | :--- | :--- | :--- |
-| **1** | — | 17-08-2026 | **Virtualization & Ubuntu OS Setup** | VirtualBox, ISO mounting, VM resource allocation | [`Experiment 1`](file:///Experiment%201/Experiment%201), `Experiment 1 outputs.pdf` |
-| **2** | **(a)** | 19-08-2026 | **Working with Basic Bash Commands** | `pwd`, `ls`, `cd`, `mkdir`, `rmdir`, `rm`, `touch` | [`Experiment 2(a)`](file:///Experiment%202/Experiment%202(a)) |
-| **2** | **(b)** | 19-08-2026 | **Flowchart-Based Directory Hierarchy** | `mkdir -p`, multi-level hierarchy (`Sem_3/OS/...`) | [`Experiment 2(b)`](file:///Experiment%202/Experiment%202(b)), `Experiment 2(b) outputs .pdf` |
-| **3** | **(a)** | 24-08-2026 | **Command Chaining & Output Redirection** | `date; w \| cat > who.txt`, pipelines, redirection | [`Experiment 3(a)`](file:///Experiment%203/Experiment%203(a)), `Experiment 3(a) output .pdf` |
-| **3** | **(b)** | 24-08-2026 | **Stream Text Transformation with Sed** | `sed -i 's/^ \([^ ]*\) \(.*\)$/\2 \1/'` | [`Experiment 3 (b)`](file:///Experiment%203/Experiment%203%20(b)), `experiment 3(b) outputs .pdf` |
-| **4** | — | 31-08-2026 | **Process Management & Linux Text Editors** | `ps aux`, `top`, `pgrep`, `kill`, `&`, `jobs`, `nano`, `vi` | [`Experiment 4`](file:///Experiment%204/Experiment%204), `Experiment 4 outputs .pdf` |
-| **5** | **(a)** | 07-09-2026 | **File vs Directory Classifier Script** | `[ -f "$1" ]`, `[ -d "$1" ]`, positional parameters | [`exp5a.sh`](file:///Experiment%205/exp5a.sh), `Experiment 5(a) outputs .pdf` |
-| **5** | **(b)** | 09-09-2026 | **Filename Uppercase Converter Script** | `tr '[:lower:]' '[:upper:]'`, `mv`, command substitution | [`exp5b.sh`](file:///Experiment%205/exp5b.sh), `Experiment 5(b) outputs.pdf` |
-| **6** | **(a)** | 13-09-2026 | **User Session Duration & Login Tracker** | `who`, `awk`, string matching (`-z`), interactive input | [`exp6a.sh`](file:///Experiment%206/exp6a.sh), `Experiment 6(a) output .pdf` |
-| **6** | **(b)** | 13-09-2026 | **Line Range Extractor Script** | `sed -n "${start},${end}p"` | [`exp6b.sh`](file:///Experiment%206/exp6b.sh), `Experiment 6(b) output .pdf` |
-| **6** | **(c)** | 13-09-2026 | **Multi-File Word Deletion Script** | `sed -i "/$word/d"`, variadic script arguments `"$@"` | [`exp6c.sh`](file:///Experiment%206/exp6c.sh), `Experiment 6(c) output .pdf` |
-| **7** | — | Sept 2026 | **String Operations & Benchmarking (C vs Shell)** | `fgets`, `gcc`, string parsing, `time ./program` | [`exp7.c`](file:///Experiment%207/exp7.c), [`exp7.sh`](file:///Experiment%207/exp7.sh), `outputs.pdf` |
-| **8** | — | 28-09-2026 | **Dynamic Memory Allocation & Monitoring** | `malloc()`, `free()`, `signal(SIGINT)`, `free -h`, `ps aux` | [`exp8.c`](file:///Experiment%208/exp8.c), `Experiment 8 outputs .pdf` |
-| **9** | — | 01-11-2026 | **CPU-Bound vs I/O-Bound Scheduling Analysis** | `top`, `pmap -x <PID>`, background execution (`&`) | [`cpu.c`](file:///Experiment%209/cpu.c), [`io.c`](file:///Experiment%209/io.c), `Screenshots.pdf` |
-| **10** | — | 01-11-2026 | **Process Creation & Synchronization** | `fork()`, `getpid()`, `wait(NULL)`, `sleep()`, `exit()` | [`exp10.c`](file:///Experiment%2010/exp10.c), `Screenshots.pdf` |
+> 💡 **Quick Code Access:** All scripts, C source programs, and plain-text files are consolidated in the **[`All_Experiment_Codes/`](file:///All_Experiment_Codes/)** folder, including the complete **[`ALL_EXPERIMENTS_MASTER_CODE.txt`](file:///All_Experiment_Codes/ALL_EXPERIMENTS_MASTER_CODE.txt)** file.
+
+| Exp # | Sub-Part | Date | Title / Topic | Primary Code / Script | Plain Text (.txt) | Outputs & Documents |
+| :---: | :---: | :---: | :--- | :--- | :--- | :--- |
+| **1** | — | 17-08-2026 | **Virtualization & Ubuntu OS Setup** | [`exp1_verification.sh`](file:///Experiment%201/exp1_verification.sh) | [`exp1_verification.txt`](file:///Experiment%201/exp1_verification.txt) | [`Experiment 1`](file:///Experiment%201/Experiment%201), `outputs.pdf` |
+| **2** | **(a)** | 19-08-2026 | **Working with Basic Bash Commands** | [`exp2a_basic_commands.sh`](file:///Experiment%202/exp2a_basic_commands.sh) | [`exp2a_basic_commands.txt`](file:///Experiment%202/exp2a_basic_commands.txt) | [`Experiment 2(a)`](file:///Experiment%202/Experiment%202(a)) |
+| **2** | **(b)** | 19-08-2026 | **Flowchart-Based Directory Hierarchy** | [`exp2b_directory_tree.sh`](file:///Experiment%202/exp2b_directory_tree.sh) | [`exp2b_directory_tree.txt`](file:///Experiment%202/exp2b_directory_tree.txt) | [`Experiment 2(b)`](file:///Experiment%202/Experiment%202(b)), `outputs.pdf` |
+| **3** | **(a)** | 24-08-2026 | **Command Chaining & Output Redirection** | [`exp3a_pipe_redirection.sh`](file:///Experiment%203/exp3a_pipe_redirection.sh) | [`exp3a_pipe_redirection.txt`](file:///Experiment%203/exp3a_pipe_redirection.txt) | [`Experiment 3(a)`](file:///Experiment%203/Experiment%203(a)), `output.pdf` |
+| **3** | **(b)** | 24-08-2026 | **Stream Text Transformation with Sed** | [`exp3b_sed_swap.sh`](file:///Experiment%203/exp3b_sed_swap.sh) | [`exp3b_sed_swap.txt`](file:///Experiment%203/exp3b_sed_swap.txt) | [`Experiment 3 (b)`](file:///Experiment%203/Experiment%203%20(b)), `outputs.pdf` |
+| **4** | — | 31-08-2026 | **Process Management & Linux Text Editors** | [`exp4_process_management.sh`](file:///Experiment%204/exp4_process_management.sh) | [`exp4_process_management.txt`](file:///Experiment%204/exp4_process_management.txt) | [`Experiment 4`](file:///Experiment%204/Experiment%204), `outputs.pdf` |
+| **5** | **(a)** | 07-09-2026 | **File vs Directory Classifier Script** | [`exp5a.sh`](file:///Experiment%205/exp5a.sh) | [`exp5a.txt`](file:///Experiment%205/exp5a.txt) | `Experiment 5(a) outputs .pdf` |
+| **5** | **(b)** | 09-09-2026 | **Filename Uppercase Converter Script** | [`exp5b.sh`](file:///Experiment%205/exp5b.sh) | [`exp5b.txt`](file:///Experiment%205/exp5b.txt) | `Experiment 5(b) outputs.pdf` |
+| **6** | **(a)** | 13-09-2026 | **User Session Duration & Login Tracker** | [`exp6a.sh`](file:///Experiment%206/exp6a.sh) | [`exp6a.txt`](file:///Experiment%206/exp6a.txt) | `Experiment 6(a) output .pdf` |
+| **6** | **(b)** | 13-09-2026 | **Line Range Extractor Script** | [`exp6b.sh`](file:///Experiment%206/exp6b.sh) | [`exp6b.txt`](file:///Experiment%206/exp6b.txt) | `Experiment 6(b) output .pdf` |
+| **6** | **(c)** | 13-09-2026 | **Multi-File Word Deletion Script** | [`exp6c.sh`](file:///Experiment%206/exp6c.sh) | [`exp6c.txt`](file:///Experiment%206/exp6c.txt) | `Experiment 6(c) output .pdf` |
+| **7** | — | Sept 2026 | **String Operations & Benchmarking (C vs Shell)** | [`exp7.c`](file:///Experiment%207/exp7.c) / [`exp7.sh`](file:///Experiment%207/exp7.sh) | [`exp7_c.txt`](file:///Experiment%207/exp7_c.txt) / [`exp7_sh.txt`](file:///Experiment%207/exp7_sh.txt) | `Experiment 7 outputs .pdf` |
+| **8** | — | 28-09-2026 | **Dynamic Memory Allocation & Monitoring** | [`exp8.c`](file:///Experiment%208/exp8.c) | [`exp8_c.txt`](file:///Experiment%208/exp8_c.txt) | `Experiment 8 outputs .pdf` |
+| **9** | — | 01-11-2026 | **CPU-Bound vs I/O-Bound Scheduling Analysis** | [`cpu.c`](file:///Experiment%209/cpu.c) / [`io.c`](file:///Experiment%209/io.c) / [`exp9_monitor.sh`](file:///Experiment%209/exp9_monitor.sh) | [`cpu_c.txt`](file:///Experiment%209/cpu_c.txt) / [`io_c.txt`](file:///Experiment%209/io_c.txt) | [Exp 9 Analysis](file:///Experiment%209/Experiment%209%20CPU%20vs%20IO%20Bound%20Analysis.md), `Screenshots.pdf` |
+| **10** | — | 01-11-2026 | **Process Creation & Synchronization** | [`exp10.c`](file:///Experiment%2010/exp10.c) | [`exp10_c.txt`](file:///Experiment%2010/exp10_c.txt) | [Exp 10 Analysis](file:///Experiment%2010/Experiment%2010%20Process%20Management.md), `Screenshots.pdf` |
 
 ---
 
@@ -271,57 +273,83 @@ Operating-System-Lab/
 ├── ARCHITECTURE.md                                     # System architecture, process lifecycles & memory models
 ├── README.md                                           # Comprehensive lab manifest & classroom presentation guide
 ├── .gitignore                                          # Build artifacts and executable filter
+├── All_Experiment_Codes/                               # Centralized directory of all 18 scripts, C codes & TXT files
+│   ├── ALL_EXPERIMENTS_MASTER_CODE.txt                 # Single consolidated text file with all experiment codes
+│   ├── README.md                                       # Directory index & quick execution guide
+│   ├── Exp1_Setup_Verification.sh / .txt               # Experiment 1 verification script
+│   ├── Exp2a_Basic_Commands.sh / .txt                  # Experiment 2(a) commands
+│   ├── Exp2b_Directory_Hierarchy.sh / .txt             # Experiment 2(b) directory tree
+│   ├── Exp3a_Sequential_Redirection.sh / .txt          # Experiment 3(a) pipeline & redirection
+│   ├── Exp3b_Sed_Word_Swap.sh / .txt                   # Experiment 3(b) sed word swap
+│   ├── Exp4_Process_Management.sh / .txt               # Experiment 4 process control
+│   ├── Exp5a_File_Or_Directory.sh / .txt               # Experiment 5(a) file/directory check
+│   ├── Exp5b_Uppercase_Converter.sh / .txt             # Experiment 5(b) uppercase rename
+│   ├── Exp6a_User_Login_Tracker.sh / .txt              # Experiment 6(a) login tracker
+│   ├── Exp6b_Line_Range_Extractor.sh / .txt            # Experiment 6(b) line extractor
+│   ├── Exp6c_Word_Deletion.sh / .txt                   # Experiment 6(c) word deletion
+│   ├── Exp7_String_Operations.c / .sh / .txt           # Experiment 7 C code & shell script
+│   ├── Exp8_Memory_Allocation.c / .txt                 # Experiment 8 memory allocation & SIGINT
+│   ├── Exp9_CPU_Bound.c / Exp9_IO_Bound.c / .txt       # Experiment 9 CPU & I/O bound programs
+│   ├── Exp9_Process_Monitor.sh / .txt                  # Experiment 9 monitor script
+│   └── Exp10_Process_Creation_Fork.c / .txt            # Experiment 10 fork & wait C program
 ├── Experiment 1/
 │   ├── Experiment 1                                    # VirtualBox & Ubuntu installation guide
+│   ├── exp1_verification.sh / .txt                     # Verification script
 │   └── Experiment 1 outputs.pdf                        # Setup & execution screenshots
 ├── Experiment 2/
 │   ├── Experiment 2(a)                                 # Basic Bash commands reference
+│   ├── exp2a_basic_commands.sh / .txt                  # Basic commands script
 │   ├── Experiment 2(b)                                 # Directory tree commands
+│   ├── exp2b_directory_tree.sh / .txt                  # Directory hierarchy script
 │   └── Experiment 2(b) outputs .pdf                    # Terminal directory outputs
 ├── Experiment 3/
 │   ├── Experiment 3(a)                                 # Sequential execution & pipe redirection
+│   ├── exp3a_pipe_redirection.sh / .txt                # Pipe redirection script
 │   ├── Experiment 3(a) output .pdf                     # Execution verification PDF
 │   ├── Experiment 3 (b)                                # Sed word swap command
+│   ├── exp3b_sed_swap.sh / .txt                        # Sed word swap script
 │   └── experiment 3(b) outputs .pdf                    # Sed execution screenshots
 ├── Experiment 4/
 │   ├── Experiment 4                                    # Process control commands & Vi/Nano
+│   ├── exp4_process_management.sh / .txt               # Process management script
 │   └── Experiment 4 outputs .pdf                       # Process management outputs
 ├── Experiment 5/
 │   ├── Experiment 5(a)                                 # File vs directory algorithm
-│   ├── exp5a.sh                                        # Standalone executable shell script
+│   ├── exp5a.sh / exp5a.txt                            # Standalone executable shell script & TXT
 │   ├── Experiment 5(a) outputs .pdf                    # Execution screenshots
 │   ├── Experiment 5(b)                                 # Filename uppercase algorithm
-│   ├── exp5b.sh                                        # Standalone executable shell script
+│   ├── exp5b.sh / exp5b.txt                            # Standalone executable shell script & TXT
 │   └── Experiment 5(b) outputs.pdf                     # Execution screenshots
 ├── Experiment 6/
 │   ├── Experiment 6(a)                                 # User login tracking procedure
-│   ├── exp6a.sh                                        # Standalone executable shell script
+│   ├── exp6a.sh / exp6a.txt                            # Standalone executable shell script & TXT
 │   ├── Experiment 6(a) output .pdf                     # Execution screenshots
 │   ├── Experiment 6(b)                                 # Line range display procedure
-│   ├── exp6b.sh                                        # Standalone executable shell script
+│   ├── exp6b.sh / exp6b.txt                            # Standalone executable shell script & TXT
 │   ├── Experiment 6(b) output .pdf                     # Execution screenshots
 │   ├── Experiment 6(c)                                 # Word deletion procedure
-│   ├── exp6c.sh                                        # Standalone executable shell script
+│   ├── exp6c.sh / exp6c.txt                            # Standalone executable shell script & TXT
 │   └── Experiment 6(c) output .pdf                     # Execution screenshots
 ├── Experiment 7/
 │   ├── Experiment 7                                    # String operation algorithms & timing
-│   ├── exp7.c                                          # C program implementation
-│   ├── exp7.sh                                         # Shell script implementation
+│   ├── exp7.c / exp7_c.txt                             # C program implementation & TXT
+│   ├── exp7.sh / exp7_sh.txt                           # Shell script implementation & TXT
 │   └── Experiment 7 outputs .pdf                       # Comparative execution outputs
 ├── Experiment 8/
 │   ├── Experiment 8                                    # Memory allocation documentation
-│   ├── exp8.c                                          # Dynamic memory & SIGINT C code
+│   ├── exp8.c / exp8_c.txt                             # Dynamic memory & SIGINT C code & TXT
 │   └── Experiment 8 outputs .pdf                       # Memory monitoring screenshots
 ├── Experiment 9/
 │   ├── Experiment 9                                    # Lab writeup reference
 │   ├── Experiment 9 CPU vs IO Bound Analysis.md        # Comprehensive experiment analysis
-│   ├── cpu.c                                           # CPU-intensive benchmark program
-│   ├── io.c                                            # I/O-intensive benchmark program
+│   ├── cpu.c / cpu_c.txt                               # CPU-intensive benchmark program & TXT
+│   ├── io.c / io_c.txt                                 # I/O-intensive benchmark program & TXT
+│   ├── exp9_monitor.sh / exp9_monitor.txt              # Process monitor script & TXT
 │   └── Experiment 9 Screenshots & Execution.pdf        # Top & pmap telemetry outputs
 └── Experiment 10/
     ├── Experiment 10                                   # Lab writeup reference
     ├── Experiment 10 Process Management.md             # Fork & synchronization analysis
-    ├── exp10.c                                         # Fork, getpid, wait, exit C code
+    ├── exp10.c / exp10_c.txt                           # Fork, getpid, wait, exit C code & TXT
     └── Experiment 10 Screenshots & Execution.pdf       # Process execution screenshots
 ```
 
